@@ -9,8 +9,9 @@ from PIL import Image, ImageTk
 
 
 ROOT = Path(__file__).resolve().parents[1]
-IMAGE_DIR = ROOT / "data/processed/26yearmale"
-DATA_DIR = ROOT / "data/experiment1"
+DATASET_NAME = "2627yearmale"
+IMAGE_DIR = ROOT / "data/processed" / DATASET_NAME
+DATA_DIR = ROOT / "data/experiment1" / DATASET_NAME
 
 
 class Experiment:
@@ -75,7 +76,7 @@ class Experiment:
     def handle_key(self, event):
         if self.trial_number == 0 and not self.accepting_rating and event.keysym == "space":
             self.show_trial()
-        elif self.accepting_rating and event.char in "12345":
+        elif self.accepting_rating and event.char in {"1", "2", "3", "4", "5"}:
             self.accepting_rating = False
             filename = self.trials[self.trial_number].name
             self.ratings[filename].append(int(event.char))

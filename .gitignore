@@ -10,14 +10,13 @@ venv/
 .env
 
 # UTKFace source data and generated image data
-data/raw/
+data/raw/utkcropped
 data/processed/
 
 # Participant data (may contain identifying information)
 data/experiment1/*.csv
+data/experiment1/**/*.csv
 
-# Generated analysis outputs
-data/rating_analysis/
 
-# Course-provided dataset metadata
-data/UTKFace_Info.xlsx
+
+

@@ -5,8 +5,9 @@ import matplotlib.pyplot as plt
 
 
 ROOT = Path(__file__).resolve().parents[1]
-INPUT_DIR = ROOT / "data/experiment1"
-OUTPUT_DIR = ROOT / "data/rating_analysis"
+DATASET_NAME = "2627yearmale"
+INPUT_DIR = ROOT / "data/experiment1" / DATASET_NAME
+OUTPUT_DIR = ROOT / "data/rating_analysis" / DATASET_NAME
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
