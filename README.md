@@ -35,12 +35,17 @@ Hvert billede vises to gange i Experiment 1. En fuld gennemførsel består derfo
 │   │   └── 2627yearmale/       # Deltagernes CSV-filer, ikke inkluderet i Git
 │   ├── rating_analysis/
 │   │   └── 2627yearmale/       # Histogrammer og eventuelle normaliserede CSV-filer
+│   ├── pca_analysis/
+│   │   └── 2627yearmale/       # PC-visualiseringer, forklaret varians og PC-scores
+│   ├── regression_model/
+│   │   └── 2627yearmale/       # Den lineære encoding-model og dens figurer
 │   └── UTKFace_Info.xlsx       # Oversigt over UTKFace
 ├── week1/
 │   ├── preprocess.py           # Konverterer udvalgte billeder til gråtoner
 │   ├── experiment1.py          # Starter rating-eksperimentet
 │   ├── analyze_ratings.py      # Analyserer ratings og laver histogrammer
 │   ├── pca_analysis.py         # PCA, PC-visualiseringer og forklaret varians
+│   ├── regression_model.py     # Forward selection og den lineære encoding-model
 │   ├── task3_report.md         # Rapportklar besvarelse af opgave 3
 │   └── sec251.md               # Projektbeskrivelsen
 ├── requirements.txt            # Python-afhængigheder
@@ -166,6 +171,24 @@ Scriptet centrerer billederne uden at standardisere pixelværdierne, beregner PC
 visualiserer de første fem PC'er, laver et plot af forklaret varians for alle PC'er
 og gemmer PC-scores til den efterfølgende encoding-model. Resultaterne gemmes i
 `data/pca_analysis/2627yearmale/`.
+
+### 5. Byg den lineære encoding-model
+
+```bash
+python week1/regression_model.py
+```
+
+Scriptet bruger deltagernes (eventuelt normaliserede) ratings som afhængig variabel
+og PC-scorerne fra opgave 3 som kandidat-predictors. De relevante PC'er vælges med
+forward selection, hvor hver kandidatmodel evalueres med 10-fold krydsvalidering i
+stedet for goodness-of-fit. Modellen fittes til sidst på alle data med kun de valgte
+PC'er. Resultaterne gemmes i `data/regression_model/2627yearmale/`:
+
+- `forward_selection.png` — krydsvalideringsfejlen som funktion af antal PC'er;
+- `selected_pcs.png` — de valgte PC'er visualiseret som i opgave 3;
+- `predicted_vs_observed.png` — modellens forudsigelser mod de faktiske ratings;
+- `predicted_ratings.csv` — observeret og forudsagt rating for hvert billede;
+- `regression_model.npz` — vægte, intercept og vægtvektoren i pixelrum til opgave 5.
 
 ## Typisk arbejdsgang
 
