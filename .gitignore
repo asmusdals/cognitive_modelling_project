@@ -11,7 +11,6 @@ venv/
 
 # UTKFace source data and generated image data
 data/raw/utkcropped
-data/processed/
 
 # Participant data (may contain identifying information)
 data/experiment1/*.csv
