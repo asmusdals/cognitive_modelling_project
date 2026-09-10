@@ -40,6 +40,8 @@ Hvert billede vises to gange i Experiment 1. En fuld gennemførsel består derfo
 │   ├── preprocess.py           # Konverterer udvalgte billeder til gråtoner
 │   ├── experiment1.py          # Starter rating-eksperimentet
 │   ├── analyze_ratings.py      # Analyserer ratings og laver histogrammer
+│   ├── pca_analysis.py         # PCA, PC-visualiseringer og forklaret varians
+│   ├── task3_report.md         # Rapportklar besvarelse af opgave 3
 │   └── sec251.md               # Projektbeskrivelsen
 ├── requirements.txt            # Python-afhængigheder
 └── README.md
@@ -153,6 +155,17 @@ Resultaterne gemmes i:
 ```text
 data/rating_analysis/2627yearmale/
 ```
+
+### 4. Kør PCA-analysen
+
+```bash
+python week1/pca_analysis.py
+```
+
+Scriptet centrerer billederne uden at standardisere pixelværdierne, beregner PCA,
+visualiserer de første fem PC'er, laver et plot af forklaret varians for alle PC'er
+og gemmer PC-scores til den efterfølgende encoding-model. Resultaterne gemmes i
+`data/pca_analysis/2627yearmale/`.
 
 ## Typisk arbejdsgang
 
