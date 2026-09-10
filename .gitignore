@@ -13,8 +13,8 @@ venv/
 data/raw/utkcropped
 
 # Participant data (may contain identifying information)
-data/experiment1/*.csv
-data/experiment1/**/*.csv
+
+
 
 
 
