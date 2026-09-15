@@ -1,0 +1,12 @@
+filename,target_rating,rating_1,rating_2,rating_3,rating_4,rating_5,rating_6,rating_7,rating_8,rating_9,rating_10
+synthetic_rating_01.85.png,1.854549,1,1,1,1,1,1,1,1,1,2
+synthetic_rating_02.18.png,2.179240,1,1,1,2,1,1,2,1,1,1
+synthetic_rating_02.50.png,2.503931,1,1,1,2,1,1,1,1,2,2
+synthetic_rating_02.83.png,2.828622,2,3,2,2,2,3,3,2,3,2
+synthetic_rating_03.15.png,3.153313,3,3,2,3,3,3,3,3,3,3
+synthetic_rating_03.48.png,3.478005,3,3,3,3,2,3,4,4,3,3
+synthetic_rating_03.80.png,3.802696,4,4,3,3,2,4,4,4,4,4
+synthetic_rating_04.13.png,4.127387,4,4,4,4,4,4,4,4,3,4
+synthetic_rating_04.45.png,4.452078,4,5,5,5,4,4,5,4,4,4
+synthetic_rating_04.78.png,4.776769,4,5,5,4,5,4,4,5,4,4
+synthetic_rating_05.10.png,5.101460,5,5,5,5,4,4,5,5,5,4
