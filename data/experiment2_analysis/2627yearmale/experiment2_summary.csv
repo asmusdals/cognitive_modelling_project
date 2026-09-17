@@ -1,0 +1,3 @@
+participant,n_stimuli,n_repeats,used_ratings,spearman_rho,p_value,spearman_rho_face_means,pearson_r,split_half_reliability
+s194504,11,10,1 2 3 4 5,0.9288,0.000000,0.9977,0.9246,0.9966
+alle,11,10,,0.9288,0.000000,0.9977,0.9246,

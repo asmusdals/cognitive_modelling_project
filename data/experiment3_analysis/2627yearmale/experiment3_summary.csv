@@ -1,0 +1,7 @@
+participant,test_filename,test_rating,n_adapt_low,n_adapt_high,mean_adapt_low,mean_adapt_high,difference_low_minus_high,direction_as_predicted,mannwhitney_p
+s194504,synthetic_rating_02.85.png,2.852134,3,3,3.0000,2.0000,+1.0000,ja,0.046854
+s194504,synthetic_rating_03.35.png,3.352134,3,3,4.0000,2.6667,+1.3333,ja,0.187632
+s194504,synthetic_rating_03.85.png,3.852134,3,3,4.0000,3.6667,+0.3333,ja,0.504985
+alle,synthetic_rating_02.85.png,2.852134,3,3,3.0000,2.0000,+1.0000,ja,0.046854
+alle,synthetic_rating_03.35.png,3.352134,3,3,4.0000,2.6667,+1.3333,ja,0.187632
+alle,synthetic_rating_03.85.png,3.852134,3,3,4.0000,3.6667,+0.3333,ja,0.504985

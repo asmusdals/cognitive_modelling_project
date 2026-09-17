@@ -406,6 +406,7 @@ def main() -> None:
         model["image_shape"],
         "Synthetic faces inside the range of predicted ratings",
         OUTPUT_DIR / "synthetic_faces_in_range.png",
+        n_cols=6,
     )
     save_comparison_figure(
         REQUESTED_RATINGS,
