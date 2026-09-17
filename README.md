@@ -62,6 +62,7 @@ Hvert billede vises to gange i Experiment 1. En fuld gennemførsel består derfo
 │   ├── experiment3.py          # Starter adaptationseksperimentet
 │   ├── analyze_experiment3.py  # Efterbillede-effekten for de tre testansigter
 │   ├── task3_report.md         # Rapportklar besvarelse af opgave 3
+│   ├── task4_report.md         # Rapportklar besvarelse af opgave 4
 │   ├── task5_6_report.md       # Rapportklar besvarelse af opgave 5 og 6
 │   └── sec251.md               # Projektbeskrivelsen
 ├── requirements.txt            # Python-afhængigheder
