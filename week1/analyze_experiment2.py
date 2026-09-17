@@ -189,8 +189,8 @@ def draw_boxplot(axis, targets: np.ndarray, ratings: np.ndarray, title: str) -> 
     axis.set_yticks(range(1, 6))
     axis.set_xticks(targets)
     axis.set_xticklabels([f"{value:.2f}" for value in targets], rotation=90, fontsize=8)
-    axis.set_xlabel("Forudsagt rating")
-    axis.set_ylabel("Observeret rating")
+    axis.set_xlabel("Predicted rating")
+    axis.set_ylabel("Observed rating")
     axis.set_title(title, fontsize=11)
     axis.grid(axis="y", alpha=0.3)
 
@@ -214,7 +214,7 @@ def save_participant_boxplots(results: list[dict], output_path: Path) -> None:
     for index in range(len(results), n_rows * n_cols):
         axes[index // n_cols][index % n_cols].axis("off")
 
-    fig.suptitle("Experiment 2: ratings som funktion af forudsagt rating", fontsize=14)
+    fig.suptitle("Experiment 2: ratings as a function of predicted rating", fontsize=14)
     fig.tight_layout(rect=(0, 0, 1, 0.94))
     fig.savefig(output_path, dpi=220)
     plt.close(fig)
@@ -229,7 +229,7 @@ def save_group_boxplot(results: list[dict], pooled: dict, output_path: Path) -> 
         + f", {len(results)} deltagere"
     )
     draw_boxplot(axis, pooled["targets"], pooled["ratings"], title)
-    fig.suptitle("Experiment 2: ratings som funktion af forudsagt rating", fontsize=13)
+    fig.suptitle("Experiment 2: ratings as a function of predicted rating", fontsize=13)
     fig.tight_layout(rect=(0, 0, 1, 0.94))
     fig.savefig(output_path, dpi=220)
     plt.close(fig)
